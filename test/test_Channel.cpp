@@ -45,7 +45,7 @@ void consumerFunc(Channel<std::string>::ptr channel) {
     }
 }
 
-TEST_CASE( "Factorials are computed", "[factorial]" ) {
+TEST_CASE( "Test Channel", "[Channel]" ) {
     auto channel = std::make_shared<Channel<std::string>>(5);
     std::vector<std::shared_ptr<std::thread>> producerThreads;
     std::vector<std::shared_ptr<std::thread>> consumerThreads;
